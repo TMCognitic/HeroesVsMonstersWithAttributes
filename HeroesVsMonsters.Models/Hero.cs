@@ -10,9 +10,10 @@ namespace HeroesVsMonsters.Models
 
             IEnumerable<LootAttribute> lootAttributes = monster.GetType().GetCustomAttributes<LootAttribute>();
 
-            foreach( LootAttribute attribute in lootAttributes )
+            foreach(LootAttribute attribute in lootAttributes)
             {
-                Console.WriteLine(attribute);
+                if(attribute.MinLevel <= monster.Level)
+                    Console.WriteLine(attribute);
             }
 
             Console.WriteLine();

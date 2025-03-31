@@ -6,7 +6,7 @@ Console.WriteLine("Hello, World!");
 
 Hero hero = new Hero();
 
-Monster[] monsters = [new Dragon(), new Orc(), new Wolf()];
+Monster[] monsters = [new Dragon() { Level = 4 }, new Orc(), new Wolf()];
 
 foreach (Monster monster in monsters)
 {

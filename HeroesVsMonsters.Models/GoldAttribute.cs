@@ -2,7 +2,7 @@
 {
     public class GoldAttribute : LootAttribute
     {
-        public GoldAttribute(int max = 6) : base("pièce(s) d'or", max)
+        public GoldAttribute(int max = 6) : base("pièce(s) d'or", max, 1)
         { 
         }
     }
